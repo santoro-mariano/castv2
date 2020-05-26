@@ -1,0 +1,27 @@
+﻿<Page
+    x:Class="Castv2TestingApp.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:Castv2TestingApp"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    FontSize="18"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+    <Grid>
+        <TextBlock x:Name ="lblLoading" Text="Loading YouTube..."/>
+        <StackPanel x:Name="spMainPanel" Visibility="Collapsed">
+            <TextBlock Text="Código del video"/>
+            <TextBox x:Name="txtVideoCode" Text="OPf0YbXqDm0"/>
+            <StackPanel>
+                <Button  Content="Load" Click="btnLoadVideo_Click"/>
+                <Button  Content="Play" Click="btnPlayVideo_Click"/>
+                <Button Content="Stop" Click="btnStopVideo_Click"/>
+                <Button Content="Pause" Click="btnPauseVideo_Click"/>
+                <Button Content="Rewind" Click="btnRewindVideo_Click"/>
+            </StackPanel>
+            
+        </StackPanel>
+    </Grid>
+</Page>
